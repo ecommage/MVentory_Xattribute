@@ -1,0 +1,45 @@
+<?php if (!is_null($data)) : ?>
+    <?php
+    $_helper = Mage::helper('xattribute');
+    ?>
+
+    <div id="tabbed_nav" class="tabbed_nav">
+        <h4><?php echo $_helper->__('Attributes')?></h4>
+        <div class="tabbed_area">
+            <!-- Show all Title of Attribute -->
+            <ul class="tabs">
+                <?php $i=0;?>
+                <?php foreach($data as $item): ?>
+                    <li><a href="javascript:void(0)" title="<?php echo $_helper->getTitleAttribute($item['tabTitle']);?>"
+                           class="<?php if($i==0) echo 'active';?> tab"><?php echo $item['tabTitle'];?></a></li>
+                    <?php $i++;?>
+                <?php endforeach; ?>
+            </ul>
+
+            <!-- Show all content of attribute -->
+            <?php foreach($data as $item): ?>
+                <div id="<?php echo $_helper->getTitleAttribute($item['tabTitle']);?>" class="content">
+                    <?php echo $item['tabContent'];?>
+                </div>
+            <?php endforeach; ?>
+        </div><!--end .tabbed_area-->
+    </div><!--End .tabbed_nav-->
+
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            var content_show = jQuery('a.active').attr('title');
+            jQuery('#'+ content_show).css({'display':'block'});
+
+            // event click tab
+            jQuery('a.tab').click(function(){
+                if(!jQuery(this).hasClass('active')){
+                    jQuery('.active').removeClass('active');
+                    jQuery(this).addClass('active');
+                    jQuery('.content').slideUp();
+                    var content_show = jQuery(this).attr('title');
+                    jQuery('#'+ content_show).slideDown();
+                }
+            });
+        });
+    </script>
+<?php endif; ?>

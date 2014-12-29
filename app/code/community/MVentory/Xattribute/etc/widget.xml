@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<widgets>
+    <xattribute_attributeTabs type="xattribute/attributeTabs" translate="name description" module="MVentory_Xattribute">
+        <name>Attribute Tab</name>
+        <description type="desc">Add attribute tab with the CMS block to the product</description>
+        
+        <!-- Define fields for widget -->
+        <parameters>            
+            <entity_id translate="label">
+                <label>Product Id</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+            </entity_id>
+            <sku translate="label">
+                <label>Product Sku</label>
+                <visible>1</visible>
+                <required>0</required>
+                <type>text</type>
+            </sku>
+            <attribute_code translate="label">
+                <label>Attribute Code</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+                <description type="desc">Example: url_key,status,sku</description>
+            </attribute_code>
+        </parameters>
+    </xattribute_attributeTabs>
+</widgets>

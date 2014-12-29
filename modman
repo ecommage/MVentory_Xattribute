@@ -1,0 +1,10 @@
+app/code/community/MVentory/Xattribute/Block/Tabs.php  app/code/community/MVentory/Xattribute/Block/Tabs.php
+app/code/community/MVentory/Xattribute/etc/config.xml  app/code/community/MVentory/Xattribute/etc/config.xml
+app/code/community/MVentory/Xattribute/etc/widget.xml  app/code/community/MVentory/Xattribute/etc/widget.xml
+app/code/community/MVentory/Xattribute/Helper/Data.php  app/code/community/MVentory/Xattribute/Helper/Data.php
+app/design/frontend/base/default/layout/mventory/xattribute.xml  app/design/frontend/base/default/layout/mventory/xattribute.xml
+app/design/frontend/base/default/template/mventory/xattribute/attributetabs.phtml  app/design/frontend/base/default/template/mventory/xattribute/attributetabs.phtml
+app/etc/modules/MVentory_Xattribute.xml  app/etc/modules/MVentory_Xattribute.xml
+skin/frontend/base/default/css/mventory/style_tab.css  skin/frontend/base/default/css/mventory/style_tab.css
+skin/frontend/base/default/js/mventory/jquery-1.11.1.js  skin/frontend/base/default/js/mventory/jquery-1.11.1.js
+skin/frontend/base/default/js/mventory/noConflict.js  skin/frontend/base/default/js/mventory/noConflict.js

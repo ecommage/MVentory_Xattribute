@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <MVentory_Xattribute>
+            <version>0.0.1</version>
+        </MVentory_Xattribute>
+    </modules>
+
+    <global>
+        <helpers>
+            <xattribute>
+                <class>MVentory_Xattribute_Helper</class>
+            </xattribute>
+        </helpers>
+        <blocks>
+            <xattribute>
+                <class>MVentory_Xattribute_Block</class>
+            </xattribute>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <xattribute module="MVentory_Xattribute">
+                    <file>mventory/xattribute.xml</file>
+                </xattribute>
+            </updates>
+        </layout>
+    </frontend>
+</config>
